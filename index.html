@@ -50,9 +50,12 @@
         <h1 class="text-3xl text-[#002C5C] font-bold">Available Jobs</h1>
         <!-- Tab buttons -->
         <section class="mt-6 mb-4 flex gap-3">
-            <button class="border-1 border-gray-300 px-3 py-2 rounded-lg bg-white er:bg-ghovray-200">All</button>
-            <button class="border-1 border-gray-300 px-3 py-2 rounded-lg bg-white hover:bg-gray-200">Interview</button>
-            <button class="border-1 border-gray-300 px-3 py-2 rounded-lg bg-white hover:bg-gray-200">Rejected</button>
+            <button id="tab-all" onclick="tabSwitch(this.id)"
+                class="border-1 border-gray-300 px-3 py-2 rounded-lg active:bg-gray-400 transition-100">All</button>
+            <button id="tab-interview" onclick="tabSwitch(this.id)"
+                class="border-1 border-gray-300 px-3 py-2 rounded-lg active:bg-gray-400 transition-100">Interview</button>
+            <button id="tab-rejected" onclick="tabSwitch(this.id)"
+                class="border-1 border-gray-300 px-3 py-2 rounded-lg active:bg-gray-400 transition-100">Rejected</button>
         </section>
         <!-- Cards -->
         <section class="flex flex-col gap-4">
@@ -81,7 +84,8 @@
                     </div>
                 </div>
                 <div>
-                    <button class="border-1 size-10 rounded-full bg-red-400 hover:bg-red-500 active:bg-red-600 tansition duration-100">
+                    <button
+                        class="border-1 size-10 rounded-full bg-red-400 hover:bg-red-500 active:bg-red-600 tansition duration-100">
                         <i class="fa-solid fa-trash-can"></i>
                     </button>
                 </div>
@@ -111,7 +115,8 @@
                     </div>
                 </div>
                 <div>
-                    <button class="border-1 size-10 rounded-full bg-red-400 hover:bg-red-500 active:bg-red-600 tansition duration-100">
+                    <button
+                        class="border-1 size-10 rounded-full bg-red-400 hover:bg-red-500 active:bg-red-600 tansition duration-100">
                         <i class="fa-solid fa-trash-can"></i>
                     </button>
                 </div>
@@ -141,13 +146,16 @@
                     </div>
                 </div>
                 <div>
-                    <button class="border-1 size-10 rounded-full bg-red-400 hover:bg-red-500 active:bg-red-600 tansition duration-100">
+                    <button
+                        class="border-1 size-10 rounded-full bg-red-400 hover:bg-red-500 active:bg-red-600 tansition duration-100">
                         <i class="fa-solid fa-trash-can"></i>
                     </button>
                 </div>
             </div>
         </section>
     </div>
+
+    <script src="index.js"></script>
 </body>
 
 </html>
